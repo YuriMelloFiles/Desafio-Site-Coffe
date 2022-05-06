@@ -1,0 +1,118 @@
+:root {
+  --background: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+  /* fonts*/
+
+  --text-font: 'Manrope', sans-serif;
+
+  
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-menu-mobile);
+  
+  
+}
+
+body {
+  background-color: var(--background);
+  font: 400 1rem var(--text-font);
+  -webkit-font-smoothing: auto;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+
+}
+
+
+
+/* HEADER */
+
+#header {
+  padding: 2.3125rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  align-items: center;
+  
+}
+
+/* navigation */
+
+
+nav {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
+nav ul li a{
+  transition: 0.2s;
+  position: relative;
+  
+}
+nav ul li a:hover {
+  font: 700 1.6rem var(--text-font);
+}
+nav ul li a:hover::after {
+  content: "";
+  width: 10px;
+  height: 180%;
+  background: var(--button);
+  position: absolute;
+  left: -1rem ;
+  bottom: -.8rem;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  left: 0 ;
+  height: 3rem;
+  
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+
+  position: fixed;
+  
+  
+  width: 130%;
+  height: 100%;
+  background-color: #000;
+  left: -1rem ;
+  top: 6rem;
+
+  font-size: 1.6rem;
+  
+
+}
+nav ul li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  
+}
+
+
+/*toggle*/
+
+nav .icon-open {
+  visibility: hidden;
+}
+
