@@ -23,11 +23,26 @@ button {
   font: 400 1rem var(--text-font);
 }
 
+main {
+  padding-top: 3rem;
+  left: -1rem;
+  width: 100%;
+  margin-bottom: 0;
+  
+}
+
+
+
 body {
   background-color: var(--background);
   font: 400 1rem var(--text-font);
   -webkit-font-smoothing: auto;
   color: var(--text-color);
+  background-image: url(assets/blur-mobile.png);
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100% 50% ;
+   /* Resize the background image to cover the entire container */
 }
 
 ul {
@@ -51,8 +66,9 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1;
   align-items: center;
+  background: var(--background)
   
 }
 
@@ -165,16 +181,9 @@ nav ul li {
    -1px 1px 0 var(--button), 
    1px 1px 0 var(--button);
 
-   color: var(--background);
+   color: #000;
 }
 
-main {
-  padding-top: 3rem;
-  left: -1rem;
-  width: 100%;
-  
-  
-}
 
 
 .content p {
@@ -213,3 +222,19 @@ main {
   
   
 }
+
+main img {
+  width: 100%;
+  height: 100%;
+    
+}
+
+div.image {
+  width: 100%;
+  margin: 0;
+  
+  
+}
+
+
+
