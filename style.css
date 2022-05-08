@@ -19,6 +19,10 @@ a {
   
 }
 
+button {
+  font: 400 1rem var(--text-font);
+}
+
 body {
   background-color: var(--background);
   font: 400 1rem var(--text-font);
@@ -40,7 +44,7 @@ ul {
 /* HEADER */
 
 #header {
-  height: 7.06rem;
+  height: 6.06rem;
   padding: 2.3125rem 1.25rem;
   border-bottom: 1px solid var(--border);
   position: fixed;
@@ -101,7 +105,7 @@ nav.show .menu {
   height: 100%;
   background-color: #000;
   left: -.55rem ;
-  top: 7.06rem;
+  top: 6.06rem;
 
   font-size: 1.3rem;
   
@@ -168,15 +172,44 @@ main {
   padding-top: 3rem;
   left: -1rem;
   width: 100%;
+  
+  
 }
 
 
-.content {
-  margin: 5.5rem;
+.content p {
+  margin-top: 8rem;
+  margin-bottom: 5.5rem;
+  margin-left:1.75rem ;
+  margin-right:1.75rem ;
   
+  font-size: 2rem;
   text-align: center;
 }
 
-.content p {
-  font-size: 1.875rem;
+.content {
+  margin: 5.5rem 1.75rem;
+  text-align: center;
+}
+
+.btn {
+  border: 1px solid var(--button);
+  padding-top: 0.5rem ;
+  padding-bottom: 0.6rem ;
+  padding-left: 1.975rem;
+  padding-right: 1.6rem;
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--text-color);
+  font-size: .7rem;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.btn span {
+  font-size: 1rem;
+  margin-bottom: 2px;
+  
+  
 }
