@@ -31,11 +31,16 @@ ul {
 
 }
 
-
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+}
 
 /* HEADER */
 
 #header {
+  height: 7.06rem;
   padding: 2.3125rem 1.25rem;
   border-bottom: 1px solid var(--border);
   position: fixed;
@@ -47,41 +52,41 @@ ul {
   
 }
 
-/* navigation */
+/* navigation / MENU */
 
 
 nav {
-  
-  display: flex;
+  height: 7.06rem;
   align-items: center;
   justify-content: space-between;
   
   
 }
 
+
 nav ul li a{
   transition: 0.2s;
   position: relative;
-  
+  padding-left: 1rem; 
 }
 nav ul li a:hover {
-  font: 700 1.6rem var(--text-font);
+  font: 700 1rem var(--text-font);
 }
 nav ul li a:hover::after {
   content: "";
-  width: 10px;
-  height: 180%;
+  width: .3rem;
+  height: 4rem;
   background: var(--button);
   position: absolute;
-  left: -1rem ;
-  bottom: -.8rem;
+  left: 0;
+  bottom: -1.25rem;
 }
 
 nav .menu {
   opacity: 0;
   visibility: hidden;
   left: 0 ;
-  height: 3rem;
+  height: 1rem;
   
 }
 
@@ -90,29 +95,88 @@ nav.show .menu {
   visibility: visible;
 
   position: fixed;
-  
+  padding-left: .5rem;
   
   width: 130%;
   height: 100%;
   background-color: #000;
-  left: -1rem ;
-  top: 6rem;
+  left: -.55rem ;
+  top: 7.06rem;
 
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  
   
 
 }
+
+nav.show .icon-open {
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav .toggle {
+  position: absolute;
+  top: 2.8rem;
+  right: 1rem;
+ 
+}
+
+nav .icon-open {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+
+  
+}
+
+nav.show .icon-close {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+  
+}
+
+nav .icon-close {
+  
+  visibility: hidden;
+  opacity: 0;
+  
+}
+
+  
 nav ul li {
   padding: 1rem 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  height: 4rem;
+}
+
+
+/*CONTENT*/
+
+
+.stroke {
+  text-shadow: -1px -1px 0 var(--button),
+   1px -1px 0 var(--button), 
+   -1px 1px 0 var(--button), 
+   1px 1px 0 var(--button);
+
+   color: var(--background);
+}
+
+main {
+  padding-top: 3rem;
+  left: -1rem;
+  width: 100%;
+}
+
+
+.content {
+  margin: 5.5rem;
   
+  text-align: center;
 }
 
-
-/*toggle*/
-
-nav .icon-open {
-  visibility: hidden;
+.content p {
+  font-size: 1.875rem;
 }
-
