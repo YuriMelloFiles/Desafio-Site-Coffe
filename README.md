@@ -4,7 +4,7 @@
 
 ### Ferramentas utilizadas para o desenvolvimento:
 
-├── HTML5
-├── CSS3
+├── HTML5 <br>
+├── CSS3 <br>
 └── JavasScript
 
