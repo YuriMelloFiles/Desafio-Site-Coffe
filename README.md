@@ -1,4 +1,4 @@
-# Desafio-Site-Coffe
+# Desafio-Site-Coffee
 
 > Este site foi criado por mim como forma de aprendizado. Desafiei-me a construí-lo do zero. 
 
